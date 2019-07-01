@@ -1,0 +1,53 @@
+///**
+//* Адаптивное меню
+//*/
+
+.nav-toggle {
+  display: none;
+}
+
+@include max-screen(991px) {
+  .nav-toggle {
+    background: none;
+    border: none;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    &__bar {
+      display: block;
+      width: 30px;
+      height: 2px;
+      border-radius: 2px;
+      background: #fff;
+      position: absolute;
+      left: 50%;
+      top: 9px;
+      margin-left: -15px;
+      transition: all 0.3s ease-in-out;
+      &:nth-child(2) {
+        top: 17px;
+      }
+      &:nth-child(3) {
+        top: 25px;
+      }
+      .header__nav_open & {
+        &:nth-child(1),
+        &:nth-child(3) {
+          top: 16px;
+        }
+        &:nth-child(2) {
+          transform: scale(0);
+        }
+        &:nth-child(1) {
+          transform: rotate(225deg);
+        }
+        &:nth-child(3) {
+          transform: rotate(-225deg);
+        }
+      }
+    }
+  }
+}

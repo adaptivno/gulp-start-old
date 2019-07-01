@@ -1,0 +1,31 @@
+/**
+* Общие
+*/
+
+.wrapper {
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  @include min-screen(576px) {
+    max-width: 540px;
+  }
+  @include min-screen(768px) {
+    max-width: 750px;
+  }
+  @include min-screen(992px) {
+    max-width: 990px;
+  }
+  @include min-screen(1200px) {
+    max-width: 1170px;
+  }
+  @include max-screen(375px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

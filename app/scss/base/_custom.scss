@@ -1,0 +1,68 @@
+// ====================
+// Кастомные параметры
+// ====================
+
+
+// !!! Важно
+// Почти все переменные по умолчанию находятся в bootstrap/_variables.scss, его лучше не редактировать
+// Переопределять переменные под конкретный проект нужно в этом файле
+// Если закомментирвать переменную, сработает bootstrap-овская переменная по умолчанию
+
+
+// Fonts
+
+$font-name: 'Font Name';
+
+$font-family-base: $font-name, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-size-base: 1rem;
+// $font-weight-base: 400;
+
+// Body
+
+$body-bg: #fff;
+$body-color: #000;
+
+// Transition
+
+$transition-custom: all .3s;
+
+
+// Links
+
+$link-color: #0094FF;
+$link-decoration: underline;
+$link-hover-color: #FF6A00;
+$link-hover-decoration: none;
+
+// Grid breakpoints (если используется сетка bootstrap-grid)
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+// Grid containers (если используется сетка bootstrap-grid)
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1170px
+);
+
+// Grid columns (если используется сетка bootstrap-grid)
+
+$grid-columns: 12;
+$grid-gutter-width: 30px;
+
+
+@mixin filter($filter-type,$filter-amount) {
+  -webkit-filter: $filter-type+unquote('(#{$filter-amount})');
+  -moz-filter: $filter-type+unquote('(#{$filter-amount})');
+  -ms-filter: $filter-type+unquote('(#{$filter-amount})');
+  -o-filter: $filter-type+unquote('(#{$filter-amount})');
+  filter: $filter-type+unquote('(#{$filter-amount})');
+}

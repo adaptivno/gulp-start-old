@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+// Миксины
+@import "base/mixins/media-queries";
+@import "base/mixins/fonts-mixin";
+@import "base/mixins/rem";
+
+// Основные параметры
+@import "base/custom";
+
+// Шрифты
+@import "base/fonts";
+
+// Bootstrap
+@import "bootstrap/bootstrap-reboot";
+//@import "bootstrap/bootstrap-grid";
+//@import "bootstrap/tables";
+
+
+
+// Стили проекта
+@import "modules/common";
+@import "modules/header";
+@import "modules/nav-toggle";
+@import "modules/nav";
+@import "modules/footer";
+@import "modules/btn";
+@import "modules/typography";
+
+// стили для работы скриптов
+// @import "scripts/name";
+
+
+/**
+* Медиазапросы
+*/

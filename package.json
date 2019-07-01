@@ -1,0 +1,29 @@
+{
+  "name": "adaptivno",
+  "version": "1.0.0",
+  "description": "start template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "adaptivno.com",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.12.7",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-csscomb": "^3.0.7",
+    "gulp-file-include": "^0.13.7",
+    "gulp-group-css-media-queries": "^1.1.0",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-newer": "^1.1.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-replace-path": "^0.4.0",
+    "gulp-sass": "^2.3.1",
+    "gulp-uglifyjs": "^0.6.2",
+    "gulp-vinyl-zip": "^1.2.2"
+  }
+}

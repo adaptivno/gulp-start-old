@@ -1,0 +1,26 @@
+/**
+* Шрифты
+*/
+
+// Редактируем только название файла, жирность и стиль шрифта.
+// В зависимости от количества файлов шрифтов, подлючаем количество @include font-face(...)
+//
+// ====================
+// Пример:
+//
+// @include font-face($font-name, file-name, font-weight, font-style);
+//
+// Где:
+//
+// $font-name - название семейства шрифта. Берется из основной переменной. Здесь не редактируем.
+// font-weight - жирность шрифта
+// font-style - стиль шрифта
+
+@include font-face($font-name, HelveticaNeueCyr-Bold, 700, normal, woff woff2);
+@include font-face($font-name, HelveticaNeueCyr-BoldItalic, 700, italic, woff woff2);
+@include font-face($font-name, HelveticaNeueCyr-Medium, 500, normal, woff woff2);
+@include font-face($font-name, HelveticaNeueCyr-MediumItalic, 500, italic, woff woff2);
+@include font-face($font-name, HelveticaNeueCyr-Roman, 400, normal, woff woff2);
+@include font-face($font-name, HelveticaNeueCyr-Italic, 400, italic, woff woff2);
+@include font-face($font-name, HelveticaNeueCyr-Thin, 100, normal, woff woff2);
+@include font-face($font-name, HelveticaNeueCyr-ThinItalic, 100, italic, woff woff2);
