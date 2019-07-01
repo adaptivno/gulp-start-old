@@ -16,11 +16,15 @@
 // font-weight - жирность шрифта
 // font-style - стиль шрифта
 
-@include font-face($font-name, HelveticaNeueCyr-Bold, 700, normal, woff woff2);
-@include font-face($font-name, HelveticaNeueCyr-BoldItalic, 700, italic, woff woff2);
-@include font-face($font-name, HelveticaNeueCyr-Medium, 500, normal, woff woff2);
-@include font-face($font-name, HelveticaNeueCyr-MediumItalic, 500, italic, woff woff2);
-@include font-face($font-name, HelveticaNeueCyr-Roman, 400, normal, woff woff2);
-@include font-face($font-name, HelveticaNeueCyr-Italic, 400, italic, woff woff2);
-@include font-face($font-name, HelveticaNeueCyr-Thin, 100, normal, woff woff2);
-@include font-face($font-name, HelveticaNeueCyr-ThinItalic, 100, italic, woff woff2);
+@include font-face($font-name, Roboto-Black, 900, normal, woff2 woff);
+@include font-face($font-name, Roboto-BlackItalic, 900, italic, woff2 woff);
+@include font-face($font-name, Roboto-Medium, 500, normal, woff2 woff);
+@include font-face($font-name, Roboto-MediumItalic, 500, italic, woff2 woff);
+@include font-face($font-name, Roboto-Bold, bold, normal, woff2 woff);
+@include font-face($font-name, Roboto-BoldItalic, bold, italic, woff2 woff);
+@include font-face($font-name, Roboto-Regular, normal, normal, woff2 woff);
+@include font-face($font-name, Roboto-Italic, normal, italic, woff2 woff);
+@include font-face($font-name, Roboto-Light, 300, normal, woff2 woff);
+@include font-face($font-name, Roboto-LightItalic, 300, italic, woff2 woff);
+@include font-face($font-name, Roboto-Thin, 100, normal, woff2 woff);
+@include font-face($font-name, Roboto-Italic, 100, italic, woff2 woff);
